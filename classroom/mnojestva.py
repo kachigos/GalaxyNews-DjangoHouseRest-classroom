@@ -1,0 +1,7 @@
+a = set(['jan','feb','march','apr','may','june'])
+b = set(['july','aug','sep','oct','nov'])
+d = b.add('dec')
+x = a.union(b)
+a.sort()
+b.sort()
+print (x)

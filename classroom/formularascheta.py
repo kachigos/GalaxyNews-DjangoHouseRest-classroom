@@ -1,0 +1,5 @@
+k = int(input('summa kredita'))
+p = float(input('procentnaya stavka'))
+m = int(input('kolichestvo mecyacev'))
+res = k*(p/(1+p)-m-1)
+print(res)
