@@ -1,0 +1,14 @@
+version: '2'
+services:
+  db:
+    image: postgres
+  web:
+    build: .
+    command:
+      - python manage.py runserver 0.0.0.0:0000
+    volumes:
+      - .:/galaxynews
+    ports:
+      - "0000:0000"
+    depends_on:
+      - db
